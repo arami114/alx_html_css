@@ -17,3 +17,7 @@ aside{
     overflow-y: auto;
 }
 
+.logo{
+    max-width: 24;
+    font-size: 2em;
+}
