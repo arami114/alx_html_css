@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Headphones</title>
+  <link rel="stylesheet" href="0-styles.css" />
+ 
+</head>
+<body>
+  <header class="hero">
+    <div class="container navbar">
+      <img src="images/logo_headphones.png" alt="Headphones Logo" class="logo">
+      <nav class="nav">
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">What we do</a></li>
+          <li><a href="#">Our results</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="hero-content">
+      <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+      <p class="sub">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+      <a href="#" class="cta-btn">CALL TO ACTION</a>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+      </p>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <img src="images/sound-frecuency.png" alt="Sound">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="feature-item">
+          <img src="images/video.png" alt="Video">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="feature-item">
+          <img src="images/music.png" alt="Music">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="feature-item">
+          <img src="images/hearing.png" alt="Hearing">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <div class="stat-cards">
+        <div class="stat-card">+2%<span>Lorem ipsum</span></div>
+        <div class="stat-card">+2%<span>Lorem ipsum</span></div>
+        <div class="stat-card">+2%<span>Lorem ipsum</span></div>
+        <div class="stat-card">+2%<span>Lorem ipsum</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <form>
+        <input type="text" placeholder="Your name">
+        <input type="email" placeholder="Your email">
+        <textarea placeholder="Message"></textarea>
+        <a href="#" class="cta-btn">CALL TO ACTION</a>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-flex">
+      <img src="images/logo_headphones.png" alt="Logo" class="logo">
+      <div class="social-icons">
+        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter (1).png" alt="Twitter"></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy;headphones 2020</p>
+  </footer>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

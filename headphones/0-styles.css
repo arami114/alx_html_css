@@ -1,0 +1,260 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 30px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Layout Containers */
+.container {
+    width: 100%;
+  max-width: 1000px; /* changed from 1100px */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.hero {
+ color: white;
+  padding: 100px 0;
+  text-align: center;
+  background-image: url("images/headphones_hero_1.jpg"); /* Replace with your actual background image */
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  padding: 20px 50px;
+  
+
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 30px;
+}
+.nav {
+  position: relative;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  color: white;
+  font-size: 0.9rem;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  display: block;
+}
+
+/* Hero Content */
+.hero-content {
+  padding: 5rem 1rem;
+}
+.hero-content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.sub {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.cta-btn {
+  display: inline-block;
+  background: #ff6b6b;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  border-radius: 20px;
+  margin: 1rem 0;
+  
+}
+.cta-btn:hover,
+.cta-btn:active {
+  opacity: 0.9;
+}
+
+.description {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+/* Features */
+.features {
+  padding: 4rem 0;
+  background: white;
+  color: #1e293b;
+  text-align: center;
+}
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  align-items: center;
+  padding: 0 1rem;
+}
+.feature-item {
+  width: 200px;
+}
+.feature-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+/* Stats */
+.stats {
+  background: url("images/headphones_hero_2.jpg");
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  bottom: 240;
+}
+.stat-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat-card {
+  width: 120px;
+  height: 230px;
+  background-color: #ff6b6b;
+  /* color: #fff; */
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 2.5rem;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-card span {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stat-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-card {
+    width: 160px;
+    height: 160px;
+    font-size: 2rem;
+  }
+}
+
+/* Contact */
+.contact {
+  background: #fff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+  background: #0f172a;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.social-icons img {
+  width: 24px;
+  margin-left: 1rem;
+}
+.footer-copy {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: #c1a0a0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-links {
+    /* position: absolute; */
+    top: 100%;
+    right: 0;
+    background: #0f172a;
+    flex-direction: column;
+    display: none;
+    width: 90px;
+    padding: 1rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+
+
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .feature-grid,
+  .stat-cards {
+    flex-direction: column;
+  }
+  .footer-flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
